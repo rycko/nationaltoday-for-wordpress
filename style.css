@@ -1,0 +1,509 @@
+/*
+Theme Name: NationalToday
+Theme URI: www.nationaltoday.com;
+Description: Theme of Rycko for get a Job of dream
+Versión: 1
+Author: Rycko
+Author URL: https://rycko.online/
+*/
+/*---------Estyles----------------*/
+/*----font face-----*/
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-ExtraBold.woff2') format('woff2'),
+        url('Montserrat-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-Black.woff2') format('woff2'),
+        url('Montserrat-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-BlackItalic.woff2') format('woff2'),
+        url('Montserrat-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-Bold.woff2') format('woff2'),
+        url('Montserrat-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-BoldItalic.woff2') format('woff2'),
+        url('Montserrat-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-ExtraBoldItalic.woff2') format('woff2'),
+        url('Montserrat-ExtraBoldItalic.woff') format('woff');
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-ExtraLightItalic.woff2') format('woff2'),
+        url('Montserrat-ExtraLightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-ExtraLight.woff2') format('woff2'),
+        url('Montserrat-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-Light.woff2') format('woff2'),
+        url('Montserrat-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-Italic.woff2') format('woff2'),
+        url('Montserrat-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-Medium.woff2') format('woff2'),
+        url('Montserrat-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-LightItalic.woff2') format('woff2'),
+        url('Montserrat-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-MediumItalic.woff2') format('woff2'),
+        url('Montserrat-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-Regular.woff2') format('woff2'),
+        url('Montserrat-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-SemiBold.woff2') format('woff2'),
+        url('Montserrat-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-SemiBoldItalic.woff2') format('woff2'),
+        url('Montserrat-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-Thin.woff2') format('woff2'),
+        url('Montserrat-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-ThinItalic.woff2') format('woff2'),
+        url('Montserrat-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+body{
+	background-color: #fff !important;
+	font-size: 12pt;
+	font-family: 'Montserrat', Arial, open sans, Helvetica, sans-serif;
+}
+header, section, footer{
+	width: 100%;
+	min-width: 960px;
+	margin: 0px auto;
+}
+a{
+	color: #33244A;
+	text-decoration: none;
+
+}
+a:hover{
+	color: #F33F33; 
+}
+/*--------header---------*/
+
+header{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	overflow: hidden;
+	width: 85%;
+}
+header .logo{
+	width: 20%;
+	float: left;
+}
+header nav{
+	width: 80%;
+	float: right;
+	padding: 10px 0px;
+	margin-top: 0px;
+}
+header nav ul{
+	float: right;
+
+}
+header nav ul li{
+	display: inline-block;
+	margin-left: 30px;
+	margin-bottom: 10px;
+}
+header nav ul li a{
+	font-weight: 300;
+	font-size: 1.2rem;
+
+}
+header .menu-mobile{
+	display: none;
+	max-width: 1000px;
+}
+header .menu-mobile ul li a{
+	padding: 20px;
+	display: block;
+}
+/*----slideshow----*/
+.header{
+	overflow: hidden;
+	width: 85%;
+
+}
+.header .slideshare{
+	width: 100%;
+	float:left;
+	position: relative;
+	z-index: 0;
+}
+
+.header .slideshare .thumb{
+	width: 59%;
+	float: left;
+	margin-right: 2%;
+}
+.header .slideshare .date{
+	font-size: 26px;
+	font-weight: bold;
+	width: 100px;
+	padding: 10px;
+	position: absolute;
+	left: 0px;
+	top: 50px;
+	color: #ffffff;
+	background: #F33F33;
+}
+.header .slideshare .date span{
+	font-size: 14px;
+}
+.header .slideshare article{
+	float: left;
+	font-family: 'Montserrat', Arial, sans-serif, Helvetica;
+	font-size: 0.9rem;
+	text-align: justify;
+	width: 39%;
+	background-color: #F7F8F9;
+	position: absolute;
+	bottom: -150px;
+	right: 30%;
+	padding: 40px;
+}
+.header .slideshare article h2{
+	font-size: 2rem;
+	font-weight: 500px;
+	text-align: left;
+	margin-bottom: 20px;
+}
+.header .slideshare article p{
+	font-size: 0.8rem;
+	font-weight: normal;
+	text-align: left;
+	line-height: 1.5;
+	margin-bottom: 20px;
+}
+.header .slideshare article p a{
+	font-size: 1rem;
+	font-weight: normal;
+	text-align: left;
+	color: #F33F33;
+	text-transform: uppercase;
+}
+.header .slideshare .slidesjs-pagination{
+	position: absolute;
+	bottom: 15%;
+	display: inline;
+	float: left;
+	width: 50%;
+}
+
+.header .slideshare .slidesjs-previous, .header .slideshare .slidesjs-next{
+	display: none;
+	
+}
+.header .slideshare .slidesjs-pagination ul li{
+	float: left;
+	width: 40px;
+	height: 40px;
+	margin-right: 10px;
+}
+.header .slideshare .slidesjs-pagination li a{
+	width: 40px;
+	height: 40px;
+	font-size: 0px;
+	display: inline-block;
+	float: left;
+	margin: 10px;
+	background: #0AC6E9;
+}
+.header .slideshare .slidesjs-pagination .active{
+	background-color: #333;
+}
+
+/*----content gral---*/
+.content-gral{
+	width: 85%;
+	overflow: hidden;
+
+}
+
+.content-gral .article-list{
+	clear: both;
+	display: flex;
+	align-items:flex-start;
+	float: left;
+
+}
+.content-gral .title-content-gral{
+	color: #0AC6E9;
+	font-size: 52px;
+	display: block;
+	width: 100%;
+	float: right;
+}
+.content-gral nav{
+	width: 100%;
+	float: right;
+	padding: 10px 0px;
+	margin-top: 0px;
+}
+.content-gral nav ul{
+	float: right;
+
+}
+.content-gral nav ul li{
+	display: inline-block;
+	margin-left: 30px;
+	margin-bottom: 10px;
+}
+nav li ul {
+	display:none;
+	position:absolute;
+	min-width:140px;
+}
+nav li:hover > ul {
+	display:block;
+}
+.content-gral nav ul li a{
+	font-weight: medium;
+	font-size: 19px;
+	text-transform: uppercase;
+	color: #AFB0B0;
+}
+
+.content-gral nav ul li a:hover, .content-gral nav ul li a:active{
+	color: #F33F33;
+}
+	
+.content-gral .article-list #pagination{
+	margin-bottom: 40px;
+	width: 100%;
+}
+.content-gral .article-list .post-text{
+	width: 15%;
+	display: inline;
+	float: left;
+	margin: 20px;
+}
+.content-gral .article-list .post-text .text p{
+	color: #33244A;
+	font-size: 30px;
+	font-family: 'Montserrat-SemiBold', Arial, Helvetica, sans-serif;
+}
+.content-gral .article-list .articles{
+	position: relative;
+	display: flex;
+	align-items: baseline;
+	flex-flow: row wrap;
+}
+.content-gral .article-list .articles .article{
+	flex-basis: 50%;
+	margin-bottom: 40px;
+}
+.content-gral .article-list .articles .article .wrap-article{
+	float: left;
+	display: block;
+	position: relative;
+	padding-right: 5%;	
+}
+.content-gral .article-list .articles .article .wrap-article h2{
+	font-size: 24px;
+	color: #33244A;
+	padding: 20px 0px;
+	font-family: "Montserrat-Medium", Arial, Helvetica, sans-serif;
+}
+.content-gral .article-list .articles .article .wrap-article p{
+	font-size: 16px;
+	color: #33244A;
+	padding: 5px 0px;
+	font-family: "Montserrat-Medium", Arial, Helvetica, sans-serif;
+}
+.content-gral .article-list .articles .article .wrap-article p span{
+	color: #A5A5A5;
+}
+.content-gral .article-list .articles .article .wrap-article img{
+	width: 100%;
+}  
+
+
+/*--media queries*/
+
+@media screen and (max-width: 1000px){
+	header .menu-mobile{
+		height: 100%;
+		margin: 0;
+		position: fixed;
+	}
+	header .menu-mobile ul li{
+		display: block;
+		float: none;
+	}
+	header .menu-desktop{
+		display: none;
+	}
+	header .menu-mobile{
+		display: inline;
+		width: 70%;
+		z-index: 40;
+	}
+	header .menu-mobile ul{
+		overflow: hidden;
+		display: none;
+		z-index: 100;
+	}
+	header .menu-mobile .btn-menu{
+		font-size: 25px;
+		font-weight: bold;
+		float: right;
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		box-sizing: border-box;
+	}
+	header .menu-mobile a{
+		float: right;
+		font-size: 25px;
+		padding: 10px;
+	}
+	/*----slides responsive-------*/
+	.header .slideshare .thumb{
+		width: 100%;
+		float: left;
+		margin-right: 2%;
+	}
+	.header .slideshare article{
+		position: block;
+		float: left;
+		width: 100%;
+		bottom: 0px;
+		right: 0%;
+		padding: 0px;
+		margin: 0px;
+	}
+	
+	
+	.content-gral{
+		display: block;
+	}
+	.content-gral .article-list .post-text{
+		width: 100%;
+		
+	}
+	.content-gral nav{
+		display: none;
+	}
+	.content-gral .article-list{
+		display: block;
+	}
+	.content-gral .article-list .articles{
+		display: block;
+	}
+	.content-gral .article-list .articles .article .wrap-article {
+		width: 100%;
+	}
+	.content-gral .article-list .articles .article{
+		width: 100%;
+	}
+}
